@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница "Pink"</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <h1 class="visually-hidden">Главная страница приложения Pink</h1>
+        <div class="page-header__logo">
+            <img src="img/logo.svg" alt="Приложение Pink">
+        </div>
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
+            <button class="main-nav__toggle"></button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item  main-nav-item--active"><a>главная</a></li>
+                    <li class="main-nav__item  main-nav-item--active"><a href="#">фотографии</a></li>
+                    <li class="main-nav__item  main-nav-item--active"><a href="#">конкурс</a></li>
+                    <li class="main-nav__item  main-nav-item--active"><a href="#">html academy</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="page-header__downloads  app-downloads">
+            <button class="app-downloads__btn">Скачать приложение</button>
+            <ul class="app-downloads__list">
+                <li class="app-downloads__item"><img src="img/apple.svg" alt="Логотип Apple"></li>
+                <li class="app-downloads__item"><img src="img/android.svg" alt="Логотип Android"></li>
+                <li class="app-downloads__item"><img src="img/windows.svg" alt="Логотип Windows"></li>
+            </ul>
+            <p class="app-downloads__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </section>
+    </header>
+    <main>
+        <p class="introduction">Устали от серости мегаполиса?
+            <br>Нам есть, что вам предложить!</p>
+        <ul class="features">
+            <li class="features__item">
+                <p class="features__title">Поднимает настроение</p>
+                <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="features__item">
+                <p class="features__title">Меняет мир вокруг</p>
+                <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="features__item">
+                <p class="features__title">Заводит новых друзей</p>
+                <p class="features__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+        </ul>
+        <section class="reviews">
+            <div class="reviews__wrapper slider">
+                <h2 class="visually-hidden">Наши отзывы</h2>
+                <ul class="reviews__list">
+                    <li class="reviews__item slider__item">
+                        <p class="reviews__username">Николай Петров</p>
+                        <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                    </li>
+                </ul>
+                <button class="slider__button" id="reviews-button-1">*</button>
+                <button class="slider__button" id="reviews-button-2">*</button>
+                <button class="slider__button" id="reviews-button-3">*</button>
+                <div class="advantages__toggles  slider__toggles">
+                    <label for="reviews-button-1" class="slider__toggle"></label>
+                    <label for="reviews-button-2" class="slider__toggle"></label>
+                    <label for="reviews-button-3" class="slider__toggle"></label>
+                </div>
+            </div>
+        </section>
+        <section class="pricelist">
+            <div class="pricelist__wrapper  slider">
+                <table class="pricelist__table">
+                    <tr class="pricelist__table-row">
+                        <td>база
+                            <br><span class="pricelist__price">1,99 USD</span></td>
+                        <td>стандарт
+                            <br><span class="pricelist__price">3,99 USD</span></td>
+                        <td>анлим
+                            <br><span class="pricelist__price">9,99 USD</span></td>
+                    </tr>
+                    <tr class="pricelist__table-row  pricelist__table-row--1">
+                        <td class="pricelist__table-cell  pricelist__table-cell--1">розовый фильтр</td>
+                        <td class="pricelist__table-cell  pricelist__table-cell--2">розовый фильтр</td>
+                        <td class="pricelist__table-cell  pricelist__table-cell--3">розовый фильтр</td>
+                    </tr>
+                    <tr class="pricelist__table-row  pricelist__table-row--2">
+                        <td class="pricelist__table-cell  pricelist__table-cell--1">смайлики</td>
+                        <td class="pricelist__table-cell  pricelist__table-cell--2">смайлики</td>
+                        <td class="pricelist__table-cell  pricelist__table-cell--3">смайлики</td>
+                    </tr>
+                    <tr class="pricelist__table-row  pricelist__table-row--3">
+                        <td class="pricelist__table-cell  pricelist__table-cell--1">комментарии</td>
+                        <td class="pricelist__table-cell  pricelist__table-cell--2">комментарии</td>
+                        <td class="pricelist__table-cell  pricelist__table-cell--3">комментарии</td>
+                    </tr>
+                </table>
+                <button class="slider__button" id="pricelist-button-1"></button>
+                <button class="slider__button" id="pricelist-button-2"></button>
+                <button class="slider__button" id="pricelist-button-3"></button>
+                <label for="pricelist-button-1" class="slider__toggle"></label>
+                <label for="pricelist-button-2" class="slider__toggle"></label>
+                <label for="pricelist-button-3" class="slider__toggle"></label>
+            </div>
+        </section>
+    </main>
+    <footer class="contacts">
+        <p class="contacts__title">Остались вопросы?
+            <br>Свяжитесь с нами!</p>
+        <p class="contacts__phone">Звоните: <span>+7 (812) 555-66-66</span></p>
+        <p class="contacts__email">Пишите: <span>mail@htmlacademy.ru</span></p>
+        <p class="contacts__address">Приезжайте в гости: <span>ул. БольшаяКонюшенная, 19/8</span></p>
+    </footer>
+</body>
+
+</html>
